@@ -1,8 +1,8 @@
 import telebot
 from telebot import types
+from Config import API_KEY
 
-api_key = "5608432692:AAHerSvAzB-bkey7qTV82Z_XdHCYmFydJjQ"
-bot = telebot.TeleBot(api_key)
+bot = telebot.TeleBot(API_KEY)
 @bot.message_handler(commands=['start'])
 def welcome(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
